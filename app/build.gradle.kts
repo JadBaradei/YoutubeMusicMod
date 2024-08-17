@@ -1,5 +1,6 @@
 plugins {
     alias(libs.plugins.androidApplication)
+    id("com.chaquo.python")
 }
 
 android {
@@ -7,6 +8,7 @@ android {
     compileSdk = 34
 
     defaultConfig {
+
         applicationId = "com.example.youtubemusicmod"
         minSdk = 31
         targetSdk = 34
@@ -14,6 +16,10 @@ android {
         versionName = "1.0"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+
+        ndk {
+            abiFilters += listOf("arm64-v8a", "x86_64")
+        }
     }
 
     buildTypes {
@@ -32,7 +38,17 @@ android {
     buildFeatures {
         viewBinding = true
     }
+
 }
+
+chaquopy{
+    defaultConfig{
+        pip{
+            install("ytmusicapi")
+        }
+    }
+}
+
 
 dependencies {
 
@@ -41,6 +57,7 @@ dependencies {
     implementation(libs.constraintlayout)
     implementation(libs.navigation.fragment)
     implementation(libs.navigation.ui)
+    implementation(libs.activity)
     testImplementation(libs.junit)
     androidTestImplementation(libs.ext.junit)
     androidTestImplementation(libs.espresso.core)
