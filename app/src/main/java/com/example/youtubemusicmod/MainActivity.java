@@ -12,6 +12,9 @@ import com.chaquo.python.PyObject;
 import com.chaquo.python.Python;
 import com.chaquo.python.android.AndroidPlatform;
 import com.example.youtubemusicmod.utils.FileUtils;
+import com.example.youtubemusicmod.utils.PythonExecutor;
+
+import java.util.Optional;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -26,16 +29,10 @@ public class MainActivity extends AppCompatActivity {
             return insets;
         });
 
-        if(!Python.isStarted()){
-            Python.start(new AndroidPlatform(this));
-        }
-        FileUtils.copyFileToInternalStorage(this, "oauth.json");
-        String filePath = getFilesDir() + "/oauth.json";
+        PythonExecutor executor = new PythonExecutor(this, "my_script");
 
-        Python py = Python.getInstance();
-        PyObject module = py.getModule("my_script");
-        PyObject getSongValue = module.callAttr("get_song_value", filePath);
-
-        String java = getSongValue.toJava(String.class);
+        executor.songSearch("Hello, it's me Adele");
     }
+
+
 }
