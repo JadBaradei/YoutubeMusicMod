@@ -31,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
 
         PythonExecutor executor = new PythonExecutor(this, "my_script");
 
-        executor.songSearch("Hello, it's me Adele");
+        executor.songSearch("Wakawaka");
     }
 
 

@@ -21,5 +21,10 @@ def get_song(song_name):
         return f"Error while getting song title: {e}"
 
 
-# initialize("oauth.json")
-# get_song("Hello it's me")
+def get_home():
+    home = yt.get_home(limit=3)
+    return home
+
+initialize("oauth.json")
+# # print(get_song("Hello it's me"))
+print(get_home())
