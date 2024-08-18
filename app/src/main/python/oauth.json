@@ -1,8 +1,0 @@
-{
- "scope": "https://www.googleapis.com/auth/youtube",
- "token_type": "Bearer",
- "access_token": "ya29.a0AcM612yubTF5cKK1S7qFyuGuJxOXUq7x1xMt6DIJUjK7m_UcyVZpA_mN_o6LPdzZ_RMkHpjhijGTPGFHamYI1V8PIURiPu0bGQrlTYrmW9ZkDUzsY0FN4mSghGQ0d3kVH6K4CCbamsgyjrtJvFF_tqVcMrQw9J6T59DhYhrlX8hCR7vBwj20aCgYKAewSARESFQHGX2MiyaXB9FcjskDr376Aml0WBw0187",
- "refresh_token": "1//03n4JWT6nh__ECgYIARAAGAMSNwF-L9IrFsOHplrA8WYmOmWT5URlmokPjPbXGUdhXgHKT8fM5RAZcPAladlhRSG6koiyJEiOFkI",
- "expires_at": 1723998046,
- "expires_in": 60349
-}

@@ -1,5 +1,8 @@
 package com.example.youtubemusicmod;
 
+import android.content.Context;
+import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 
 import androidx.activity.EdgeToEdge;
@@ -8,13 +11,7 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
-import com.chaquo.python.PyObject;
-import com.chaquo.python.Python;
-import com.chaquo.python.android.AndroidPlatform;
-import com.example.youtubemusicmod.utils.FileUtils;
 import com.example.youtubemusicmod.utils.PythonExecutor;
-
-import java.util.Optional;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -28,11 +25,18 @@ public class MainActivity extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
-
-        PythonExecutor executor = new PythonExecutor(this, "my_script");
-
-        executor.songSearch("Wakawaka");
+        PythonExecutor executor = PythonExecutor.getInstance(this);
+        checkLogin();
     }
 
+    private void checkLogin(){
+        SharedPreferences preferences = getSharedPreferences("MyPrefs", Context.MODE_PRIVATE);
+        boolean isLoggedIn = preferences.getBoolean("isLoggedIn", false);
+        if(!isLoggedIn){
+            Intent intent = new Intent(MainActivity.this, LoginActivity.class);
+            startActivity(intent);
+            finish();
+        }
+    }
 
 }

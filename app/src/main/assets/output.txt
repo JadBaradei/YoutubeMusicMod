@@ -1,0 +1,1 @@
+Go to https://www.google.com/device?user_code=THQ-CRV-RMF, finish the login flow and press Enter when done, Ctrl-C to abort
