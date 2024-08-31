@@ -15,6 +15,9 @@
         android:theme="@style/Theme.YoutubeMusicMod"
         tools:targetApi="31">
         <activity
+            android:name=".LinkRefresherActivity"
+            android:exported="true" />
+        <activity
             android:name=".LoginActivity"
             android:exported="true" />
         <activity
