@@ -5,15 +5,16 @@ import android.content.Context;
 import com.chaquo.python.PyObject;
 import com.chaquo.python.Python;
 import com.chaquo.python.android.AndroidPlatform;
+import com.example.youtubemusicmod.models.ListenAgainContent;
+import com.example.youtubemusicmod.models.ListenAgainContentList;
+import com.fasterxml.jackson.core.JsonProcessingException;
+import com.fasterxml.jackson.core.type.TypeReference;
+import com.fasterxml.jackson.databind.ObjectMapper;
 
-import java.io.File;
 import java.util.List;
-import java.util.concurrent.ExecutionException;
+import java.util.Map;
 
 public class PythonExecutor {
-    private static final String OAUTH_JSON_PATH = "/oauth.json";
-    private static final String OAUTH_JSON_NAME = "oauth.json";
-    private String SCRIPT_NAME = "my_script";
     private static PythonExecutor INSTANCE;
     private final Python pythonInstance;
 
@@ -28,10 +29,6 @@ public class PythonExecutor {
         return INSTANCE;
     }
 
-    public void setScript(String scriptName){
-        SCRIPT_NAME = scriptName;
-    }
-
     private Python init(Context currentActivity){
         if(!Python.isStarted()){
             Python.start(new AndroidPlatform(currentActivity));
@@ -39,20 +36,23 @@ public class PythonExecutor {
         return Python.getInstance();
     }
 
-    public void sendEnter(){
-        pythonInstance.getModule("sender").callAttr("send_input_to_script", "\n");
+    public PyObject startMainInstance(){
+        return pythonInstance.getModule("main");
     }
 
-    public void initializeYtb(Context context){
-        pythonInstance.getModule("my_script").callAttr("initialize", context);
+    public void initYoutube(PyObject main, String oauthFileContent){
+        PyObject pyObject = main.callAttr("yt_init", oauthFileContent);
     }
 
-    public boolean isInitialized(){
-        return pythonInstance.getModule("my_script").callAttr("is_initialized").toJava(Boolean.class);
+    public void getHome(PyObject main){
+        main.callAttr("get_home");
     }
 
-    public void sendRequest(Context context){
-        pythonInstance.getModule("my_script").callAttr("setup_oauth", context);
+    public Map<String, Object> getListenAgain() throws JsonProcessingException {
+        ObjectMapper objectMapper = new ObjectMapper();
+        List listenAgainString = pythonInstance.getModule("main").callAttr("get_listen_again").toJava(List.class);
+        //ListenAgainContentList listenAgainContent = objectMapper.readValue(listenAgainString, ListenAgainContentList.class);
+        return null;
     }
 
 }

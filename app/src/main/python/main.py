@@ -1,38 +1,42 @@
-import ytmusicapi
-import sys
+from ytmusicapi import YTMusic
+import json
 import os
-from com.example.youtubemusicmod.utils import AssetHelper #type: ignore
 
 yt = None
+home_data = None
 
-def setup_oauth(context):
-    original_stdout = sys.stdout  # Save the original stdout
-    AssetHelper.createInternalFile(context, "output.txt", "")
-    log_file = open(AssetHelper.getInternalFilePath(context,"output.txt"), 'w')
-    try:
-        sys.stdout = log_file  # Redirect stdout to the log file
-        AssetHelper.createInternalFile(context, "oauth.json", "")
-        ytmusicapi.setup_oauth(AssetHelper.getInternalFilePath(context,"oauth.json"))
-    except Exception as e:
-        print(f"An error occurred: {e}")
-    finally:
-        sys.stdout = original_stdout  # Restore stdout
-        log_file.close()  # Close the log file
-
-def initialize(context):
+def yt_init_here():
     global yt
-    oauth_file = open(AssetHelper.getInternalFilePath(context,"output.txt"), 'r')
-    yt = ytmusicapi.YTMusic(oauth_file)
+    yt = YTMusic('main/python/oauth.json')
 
-def is_initialized():
+def yt_init(oauthFileContent):
+    global yt
     try:
-        # Attempt to fetch the user's playlists
-        suggestions = yt.get_search_suggestions()
-        return suggestions is not None
+        yt = YTMusic(oauthFileContent)
+        return "Success"
+    except FileNotFoundError:
+        return "file not found"
     except Exception as e:
-        print(f"Initialization check failed: {e}")
-        return False
+        return "Error occured"
 
+def get_home():
+    global home_data
+    home_data = yt.get_home(limit=5)
+    
+def get_listen_again():
+    if home_data is None:
+        get_home()
+    contents = next((item['contents'] for item in home_data if item['title'] == 'Listen again'), None)
+    return json.dumps(contents)
+
+def get_quick_picks():
+    if home_data is None:
+        get_home()
+    return next((item for item in home_data if item['title'] == 'Quick picks'), None)
+
+def outputJson(text, file_name):
+    with open(file_name, 'w') as file:
+        json.dump(text, file, indent=4)
 
 def get_song(song_name):
     try:
@@ -42,3 +46,6 @@ def get_song(song_name):
         return song.get("videoDetails").get("title")
     except Exception as e:
         return f"Error while getting song title: {e}"
+    
+# yt_init_here()
+# outputJson(get_listen_again(), 'listenagain.json')

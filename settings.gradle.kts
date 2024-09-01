@@ -17,7 +17,6 @@ dependencyResolutionManagement {
         google()
         mavenCentral()
     }
-
 }
 
 rootProject.name = "Youtube Music Mod"
