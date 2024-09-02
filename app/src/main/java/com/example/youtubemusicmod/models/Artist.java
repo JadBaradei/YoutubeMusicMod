@@ -5,6 +5,9 @@ public class Artist {
     private String name;
     private String id;
 
+    public Artist(){
+        //Default constructor
+    }
     public Artist(String name, String id) {
         this.name = name;
         this.id = id;

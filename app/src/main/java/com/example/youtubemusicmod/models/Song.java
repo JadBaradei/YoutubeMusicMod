@@ -2,24 +2,34 @@ package com.example.youtubemusicmod.models;
 
 import java.util.ArrayList;
 
-public class ListenAgainContent {
+public class Song {
 
     private String title;
     private String videoId;
     private String playlistId;
     private ArrayList<Thumbnail> thumbnails;
     private ArrayList<Artist> artists;
+    private String description;
 
-    public ListenAgainContent(){
-
+    public Song(){
+        //Default constructor
     }
 
-    public ListenAgainContent(String title, String videoId, String playlistId, ArrayList<Thumbnail> thumbnails, ArrayList<Artist> artists) {
+    public Song(String title, String videoId, String playlistId, ArrayList<Thumbnail> thumbnails, ArrayList<Artist> artists, String description) {
         this.title = title;
         this.videoId = videoId;
         this.playlistId = playlistId;
         this.thumbnails = thumbnails;
         this.artists = artists;
+        this.description = description;
+    }
+
+    public String getDescription() {
+        return description;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
     }
 
     public String getTitle() {

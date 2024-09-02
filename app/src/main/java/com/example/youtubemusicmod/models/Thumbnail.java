@@ -6,6 +6,10 @@ public class Thumbnail {
     private int width;
     private int height;
 
+    public Thumbnail(){
+        // Default Constructor
+    }
+
     public Thumbnail(String url, int width, int height) {
         this.url = url;
         this.width = width;

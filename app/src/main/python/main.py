@@ -48,4 +48,4 @@ def get_song(song_name):
         return f"Error while getting song title: {e}"
     
 # yt_init_here()
-# outputJson(get_listen_again(), 'listenagain.json')
+# outputJson(get_quick_picks(), 'quickpicks.json')

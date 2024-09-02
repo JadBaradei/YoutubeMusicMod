@@ -1,0 +1,518 @@
+{
+    "title": "Quick picks",
+    "contents": [
+        {
+            "title": "Say You Won't Let Go",
+            "videoId": "TUnEJM6W-Fw",
+            "artists": [
+                {
+                    "name": "James Arthur",
+                    "id": "UCNAbUat5xDtp6FeBphe2V_Q"
+                }
+            ],
+            "thumbnails": [
+                {
+                    "url": "https://lh3.googleusercontent.com/XtAf1Box9h3DViDF5keWbkgiF7VMgCBPaexmHPS-s9tIj8rxu7IH-6h77koUjtgY4anzQZDmt7JyMCeJ=w60-h60-l90-rj",
+                    "width": 60,
+                    "height": 60
+                },
+                {
+                    "url": "https://lh3.googleusercontent.com/XtAf1Box9h3DViDF5keWbkgiF7VMgCBPaexmHPS-s9tIj8rxu7IH-6h77koUjtgY4anzQZDmt7JyMCeJ=w120-h120-l90-rj",
+                    "width": 120,
+                    "height": 120
+                }
+            ],
+            "isExplicit": false,
+            "album": {
+                "name": "Say You Won't Let Go",
+                "id": "MPREb_kYPXGyd7iaf"
+            }
+        },
+        {
+            "title": "Falling",
+            "videoId": "vabmziwg88U",
+            "artists": [
+                {
+                    "name": "Harry Styles",
+                    "id": "UCVacQ2t5GUZ2t_J3Ia9BynA"
+                }
+            ],
+            "thumbnails": [
+                {
+                    "url": "https://lh3.googleusercontent.com/S81rF7hb7asyWLPyVpaUmHUlUrdY-2yWh4R-OYUiaT-rLNf3z-ipKX_A1z6YDKeqaXph7iP38h73QGE=w60-h60-l90-rj",
+                    "width": 60,
+                    "height": 60
+                },
+                {
+                    "url": "https://lh3.googleusercontent.com/S81rF7hb7asyWLPyVpaUmHUlUrdY-2yWh4R-OYUiaT-rLNf3z-ipKX_A1z6YDKeqaXph7iP38h73QGE=w120-h120-l90-rj",
+                    "width": 120,
+                    "height": 120
+                }
+            ],
+            "isExplicit": false,
+            "album": {
+                "name": "Fine Line",
+                "id": "MPREb_4NGjVeinh8q"
+            }
+        },
+        {
+            "title": "You Say",
+            "videoId": "g_49NQI3XTQ",
+            "artists": [
+                {
+                    "name": "Lauren Daigle",
+                    "id": "UCYxcuspkcCZj8ApIlm1y4Bw"
+                }
+            ],
+            "thumbnails": [
+                {
+                    "url": "https://lh3.googleusercontent.com/Vde9RotbP4uIFPZxU2Kc3vfDFRLuatkNUP61NgeA65hbULTIgHmXJBZkN1tLk1iQ6b9na8cbn1L1iWd8nw=w60-h60-l90-rj",
+                    "width": 60,
+                    "height": 60
+                },
+                {
+                    "url": "https://lh3.googleusercontent.com/Vde9RotbP4uIFPZxU2Kc3vfDFRLuatkNUP61NgeA65hbULTIgHmXJBZkN1tLk1iQ6b9na8cbn1L1iWd8nw=w120-h120-l90-rj",
+                    "width": 120,
+                    "height": 120
+                }
+            ],
+            "isExplicit": false,
+            "album": {
+                "name": "Look Up Child",
+                "id": "MPREb_Le6SpIEQ22R"
+            }
+        },
+        {
+            "title": "Hotel California",
+            "videoId": "BciS5krYL80",
+            "artists": [
+                {
+                    "name": "Eagles",
+                    "id": "UC49r4GNHHpc-eQ9hmD2Rg6A"
+                }
+            ],
+            "thumbnails": [
+                {
+                    "url": "https://lh3.googleusercontent.com/s8QFRo91FYOkY2M1967AtulxiQpHXC7pEjWtsGzCQ4ZN25wnvhasHO0S4e_MWm04-HVfmBRvy8jmbq2-ZA=w60-h60-l90-rj",
+                    "width": 60,
+                    "height": 60
+                },
+                {
+                    "url": "https://lh3.googleusercontent.com/s8QFRo91FYOkY2M1967AtulxiQpHXC7pEjWtsGzCQ4ZN25wnvhasHO0S4e_MWm04-HVfmBRvy8jmbq2-ZA=w120-h120-l90-rj",
+                    "width": 120,
+                    "height": 120
+                }
+            ],
+            "isExplicit": false,
+            "album": {
+                "name": "Legacy",
+                "id": "MPREb_E2rekB6aBjC"
+            }
+        },
+        {
+            "title": "You & I",
+            "videoId": "uWRwLfWwZe0",
+            "artists": [
+                {
+                    "name": "One Direction",
+                    "id": "UCREhun2tPd7aQnJczZM_Mww"
+                }
+            ],
+            "thumbnails": [
+                {
+                    "url": "https://lh3.googleusercontent.com/8wMcyJUf_TH65Rlsu_nM98sPC9OyR2Bcn-C0q1TA4tuVnbmmdcwAdos1xh2GF9qetGzx8ng67KEaCTlemQ=w60-h60-l90-rj",
+                    "width": 60,
+                    "height": 60
+                },
+                {
+                    "url": "https://lh3.googleusercontent.com/8wMcyJUf_TH65Rlsu_nM98sPC9OyR2Bcn-C0q1TA4tuVnbmmdcwAdos1xh2GF9qetGzx8ng67KEaCTlemQ=w120-h120-l90-rj",
+                    "width": 120,
+                    "height": 120
+                }
+            ],
+            "isExplicit": false,
+            "album": {
+                "name": "Midnight Memories (Deluxe)",
+                "id": "MPREb_wNGNEdTUKT9"
+            }
+        },
+        {
+            "title": "Careless Whisper",
+            "videoId": "gTwn_LoH7ig",
+            "artists": [
+                {
+                    "name": "George Michael",
+                    "id": "UCgNivrx0yqbFoAEgf2AsRXg"
+                }
+            ],
+            "thumbnails": [
+                {
+                    "url": "https://lh3.googleusercontent.com/esHwEfWztNFSK5ifRQDsmIYKmOE3bvqI6dUFzvNFywoD2E--AfM5DXdAJ7CFFH9vdG4WKSA-q5GS_e8=w60-h60-l90-rj",
+                    "width": 60,
+                    "height": 60
+                },
+                {
+                    "url": "https://lh3.googleusercontent.com/esHwEfWztNFSK5ifRQDsmIYKmOE3bvqI6dUFzvNFywoD2E--AfM5DXdAJ7CFFH9vdG4WKSA-q5GS_e8=w120-h120-l90-rj",
+                    "width": 120,
+                    "height": 120
+                }
+            ],
+            "isExplicit": false,
+            "album": {
+                "name": "The Final",
+                "id": "MPREb_RllC2bTbjnc"
+            }
+        },
+        {
+            "title": "Shivers",
+            "videoId": "G1ej5up7JG0",
+            "artists": [
+                {
+                    "name": "Ed Sheeran",
+                    "id": "UClmXPfaYhXOYsNn_QUyheWQ"
+                }
+            ],
+            "thumbnails": [
+                {
+                    "url": "https://lh3.googleusercontent.com/LDjFD-70y9c3aYL3-2zTUXkmlWfNlryJllQpHZLxZgi0i73pGx9JaJkNzDTo2LO9cGBDJx7E4eWdytMA=w60-h60-l90-rj",
+                    "width": 60,
+                    "height": 60
+                },
+                {
+                    "url": "https://lh3.googleusercontent.com/LDjFD-70y9c3aYL3-2zTUXkmlWfNlryJllQpHZLxZgi0i73pGx9JaJkNzDTo2LO9cGBDJx7E4eWdytMA=w120-h120-l90-rj",
+                    "width": 120,
+                    "height": 120
+                }
+            ],
+            "isExplicit": false,
+            "album": {
+                "name": "Shivers",
+                "id": "MPREb_0qzA9qC504a"
+            }
+        },
+        {
+            "title": "Too Much To Ask",
+            "videoId": "romgpfNZppw",
+            "artists": [
+                {
+                    "name": "Niall Horan",
+                    "id": "UCxm9sS8Dd2aRthr_O3rVLJQ"
+                }
+            ],
+            "thumbnails": [
+                {
+                    "url": "https://lh3.googleusercontent.com/h4r1TzPG5ohcaE6E_VYk8XF81heDpHwYuCvv6tc0TsUC4yy-bD0he-T9xnwBIe_TdI2E9U_5QV_xiLybWQ=w60-h60-l90-rj",
+                    "width": 60,
+                    "height": 60
+                },
+                {
+                    "url": "https://lh3.googleusercontent.com/h4r1TzPG5ohcaE6E_VYk8XF81heDpHwYuCvv6tc0TsUC4yy-bD0he-T9xnwBIe_TdI2E9U_5QV_xiLybWQ=w120-h120-l90-rj",
+                    "width": 120,
+                    "height": 120
+                }
+            ],
+            "isExplicit": true,
+            "album": {
+                "name": "Flicker",
+                "id": "MPREb_phstEV0ZwJA"
+            }
+        },
+        {
+            "title": "Bad Reputation",
+            "videoId": "GDPJG0zBvmE",
+            "artists": [
+                {
+                    "name": "Shawn Mendes",
+                    "id": "UC6ZjlLJhqP79nqGr3Ic6Adg"
+                }
+            ],
+            "thumbnails": [
+                {
+                    "url": "https://lh3.googleusercontent.com/qKMzPuozrW2r-MHn_w_yopPEp1QrY6mscv0lOe7AHOFyN8p-e3T5T9B_sgR7OdN15hYwpi5gQVtHIEk=w60-h60-l90-rj",
+                    "width": 60,
+                    "height": 60
+                },
+                {
+                    "url": "https://lh3.googleusercontent.com/qKMzPuozrW2r-MHn_w_yopPEp1QrY6mscv0lOe7AHOFyN8p-e3T5T9B_sgR7OdN15hYwpi5gQVtHIEk=w120-h120-l90-rj",
+                    "width": 120,
+                    "height": 120
+                }
+            ],
+            "isExplicit": false,
+            "album": {
+                "name": "Illuminate",
+                "id": "MPREb_ccD4B2dhIjT"
+            }
+        },
+        {
+            "title": "Yellow",
+            "videoId": "9qnqYL0eNNI",
+            "artists": [
+                {
+                    "name": "Coldplay",
+                    "id": "UCIaFw5VBEK8qaW6nRpx_qnw"
+                }
+            ],
+            "thumbnails": [
+                {
+                    "url": "https://lh3.googleusercontent.com/7RK5kFu8RjjulsxsPCJ55wmJLchKaaIRAYih0ldj--RGbnOOdA0U2vmLWyVfjPW82nR-Dwm2r8PhEi61=w60-h60-l90-rj",
+                    "width": 60,
+                    "height": 60
+                },
+                {
+                    "url": "https://lh3.googleusercontent.com/7RK5kFu8RjjulsxsPCJ55wmJLchKaaIRAYih0ldj--RGbnOOdA0U2vmLWyVfjPW82nR-Dwm2r8PhEi61=w120-h120-l90-rj",
+                    "width": 120,
+                    "height": 120
+                }
+            ],
+            "isExplicit": false,
+            "album": {
+                "name": "Parachutes",
+                "id": "MPREb_oBucXyijinj"
+            }
+        },
+        {
+            "title": "Shape Of My Heart",
+            "videoId": "dOjFcx3GJHg",
+            "artists": [
+                {
+                    "name": "Sting",
+                    "id": "UCHhKCdsmx9t-PSqlSfa-VKA"
+                }
+            ],
+            "thumbnails": [
+                {
+                    "url": "https://lh3.googleusercontent.com/ux225BipIhKe2SpbihZtxogef5aR1adxAqEJC-GxMTbPjfRRHVDGaoQzfeVqqnTwaZ2IZdN_06OxYSI=w60-h60-l90-rj",
+                    "width": 60,
+                    "height": 60
+                },
+                {
+                    "url": "https://lh3.googleusercontent.com/ux225BipIhKe2SpbihZtxogef5aR1adxAqEJC-GxMTbPjfRRHVDGaoQzfeVqqnTwaZ2IZdN_06OxYSI=w120-h120-l90-rj",
+                    "width": 120,
+                    "height": 120
+                }
+            ],
+            "isExplicit": false,
+            "album": {
+                "name": "Ten Summoner's Tales",
+                "id": "MPREb_KhruEnpVbAi"
+            }
+        },
+        {
+            "title": "Flowers",
+            "videoId": "BkSSOGNeWTM",
+            "artists": [
+                {
+                    "name": "Miley Cyrus",
+                    "id": "UCREdEwBdZcnQLIT0ThaAtmQ"
+                }
+            ],
+            "thumbnails": [
+                {
+                    "url": "https://lh3.googleusercontent.com/umJNTu_qH_THEHP4XsOb4bMCjKn1nka4c8iz8Vs791pB5aroCWwq4aHC9ds5kCnONrgNUPgPadWnecak=w60-h60-l90-rj",
+                    "width": 60,
+                    "height": 60
+                },
+                {
+                    "url": "https://lh3.googleusercontent.com/umJNTu_qH_THEHP4XsOb4bMCjKn1nka4c8iz8Vs791pB5aroCWwq4aHC9ds5kCnONrgNUPgPadWnecak=w120-h120-l90-rj",
+                    "width": 120,
+                    "height": 120
+                }
+            ],
+            "isExplicit": false,
+            "album": {
+                "name": "Flowers",
+                "id": "MPREb_vgko26UcRX3"
+            }
+        },
+        {
+            "title": "If the World Was Ending (feat. Julia Michaels)",
+            "videoId": "DPZ99hxi4-A",
+            "artists": [
+                {
+                    "name": "JP Saxe",
+                    "id": "UC91Bvz_hS8v8FHBZU3Sb6qw"
+                }
+            ],
+            "thumbnails": [
+                {
+                    "url": "https://lh3.googleusercontent.com/Yb3tFl_42DeaX0xce939RA03zHb7ZIeYCDH7JHNMNtS98k9jUcttbpMvgQMn7zsFKyVnX1P2mO4fiiRx=w60-h60-l90-rj",
+                    "width": 60,
+                    "height": 60
+                },
+                {
+                    "url": "https://lh3.googleusercontent.com/Yb3tFl_42DeaX0xce939RA03zHb7ZIeYCDH7JHNMNtS98k9jUcttbpMvgQMn7zsFKyVnX1P2mO4fiiRx=w120-h120-l90-rj",
+                    "width": 120,
+                    "height": 120
+                }
+            ],
+            "isExplicit": false,
+            "album": {
+                "name": "If the World Was Ending",
+                "id": "MPREb_3GsTQxWWXUU"
+            }
+        },
+        {
+            "title": "Lost on You",
+            "videoId": "sNiz29hrZQo",
+            "artists": [
+                {
+                    "name": "LP",
+                    "id": "UCMKd-DfyhUtUdPXZRjFYZLw"
+                }
+            ],
+            "thumbnails": [
+                {
+                    "url": "https://lh3.googleusercontent.com/MAA_nE_7YioKd5GgAxoxin-DWVkci_26yvZOlWwYw5DhiKgka_g86F7ejA8Vhfe0CakazM5RDw_uZesEVg=w60-h60-l90-rj",
+                    "width": 60,
+                    "height": 60
+                },
+                {
+                    "url": "https://lh3.googleusercontent.com/MAA_nE_7YioKd5GgAxoxin-DWVkci_26yvZOlWwYw5DhiKgka_g86F7ejA8Vhfe0CakazM5RDw_uZesEVg=w120-h120-l90-rj",
+                    "width": 120,
+                    "height": 120
+                }
+            ],
+            "isExplicit": false,
+            "album": {
+                "name": "Lost On You",
+                "id": "MPREb_T1w9brbqomT"
+            }
+        },
+        {
+            "title": "I Ain't Worried",
+            "videoId": "NF7oYY7Lhq4",
+            "artists": [
+                {
+                    "name": "OneRepublic",
+                    "id": "UCrrbm1toLPud8fFIisPuxpg"
+                }
+            ],
+            "thumbnails": [
+                {
+                    "url": "https://lh3.googleusercontent.com/3wlF7gwK6D-aXMqRc0_NtBi9_-3p-SJY3L9hjcFzp4JSEMUTN8SBoELpNDy4eHbDhyd5YNlH3l6289Is=w60-h60-l90-rj",
+                    "width": 60,
+                    "height": 60
+                },
+                {
+                    "url": "https://lh3.googleusercontent.com/3wlF7gwK6D-aXMqRc0_NtBi9_-3p-SJY3L9hjcFzp4JSEMUTN8SBoELpNDy4eHbDhyd5YNlH3l6289Is=w120-h120-l90-rj",
+                    "width": 120,
+                    "height": 120
+                }
+            ],
+            "isExplicit": false,
+            "album": {
+                "name": "I Ain\u2019t Worried (Music From The Motion Picture \"Top Gun: Maverick\")",
+                "id": "MPREb_TNadoqPosD7"
+            }
+        },
+        {
+            "title": "I Wanna Be Yours",
+            "videoId": "nyuo9-OjNNg",
+            "artists": [
+                {
+                    "name": "Arctic Monkeys",
+                    "id": "UC8Yu1_yfN5qPh601Y4btsYw"
+                }
+            ],
+            "thumbnails": [
+                {
+                    "url": "https://lh3.googleusercontent.com/7a03Ybk8vbe8c4dl4E8l77Y4e9aEWjQvTfOAdLdXxsnjZ57gYQ8FsKra9SgXAHT-jtiwuq6lukCfbRKL=w60-h60-l90-rj",
+                    "width": 60,
+                    "height": 60
+                },
+                {
+                    "url": "https://lh3.googleusercontent.com/7a03Ybk8vbe8c4dl4E8l77Y4e9aEWjQvTfOAdLdXxsnjZ57gYQ8FsKra9SgXAHT-jtiwuq6lukCfbRKL=w120-h120-l90-rj",
+                    "width": 120,
+                    "height": 120
+                }
+            ],
+            "isExplicit": false,
+            "album": {
+                "name": "AM",
+                "id": "MPREb_m7saomf2NFN"
+            }
+        },
+        {
+            "title": "Beautiful Things",
+            "videoId": "eLhSxOAaWmg",
+            "artists": [
+                {
+                    "name": "Benson Boone",
+                    "id": "UChN7Bcek6HoXA-j8K8T7olQ"
+                }
+            ],
+            "thumbnails": [
+                {
+                    "url": "https://lh3.googleusercontent.com/-tOODHuXHt7vMCroq0W-mRNHwg75QKEbp99QtaDKGB-u2MimQ0LnGoazZW9ROwUTIo50Yz6DV-Zkjmmy=w60-h60-l90-rj",
+                    "width": 60,
+                    "height": 60
+                },
+                {
+                    "url": "https://lh3.googleusercontent.com/-tOODHuXHt7vMCroq0W-mRNHwg75QKEbp99QtaDKGB-u2MimQ0LnGoazZW9ROwUTIo50Yz6DV-Zkjmmy=w120-h120-l90-rj",
+                    "width": 120,
+                    "height": 120
+                }
+            ],
+            "isExplicit": false,
+            "album": {
+                "name": "Fireworks & Rollerblades",
+                "id": "MPREb_2QBwm7SGXC3"
+            }
+        },
+        {
+            "title": "Wake Me Up",
+            "videoId": "2NiyrtYegso",
+            "artists": [
+                {
+                    "name": "Avicii",
+                    "id": "UCuACQmW04T3v9Mz_1_suFYw"
+                }
+            ],
+            "thumbnails": [
+                {
+                    "url": "https://lh3.googleusercontent.com/XincHWEjkXhpbavoQEHWRbTcVdvHsujjr7OAw-73KUCILFgjLdevPW8vkoaRMibnwkTtGWkEDyKbuNeK=w60-h60-l90-rj",
+                    "width": 60,
+                    "height": 60
+                },
+                {
+                    "url": "https://lh3.googleusercontent.com/XincHWEjkXhpbavoQEHWRbTcVdvHsujjr7OAw-73KUCILFgjLdevPW8vkoaRMibnwkTtGWkEDyKbuNeK=w120-h120-l90-rj",
+                    "width": 120,
+                    "height": 120
+                }
+            ],
+            "isExplicit": false,
+            "album": {
+                "name": "True (Bonus Edition)",
+                "id": "MPREb_nJh37OXr6e5"
+            }
+        },
+        {
+            "title": "Stay (feat. Mikky Ekko)",
+            "videoId": "2aLO6Ecof4s",
+            "artists": [
+                {
+                    "name": "Rihanna",
+                    "id": "UCvWtix2TtWGe9kffqnwdaMw"
+                }
+            ],
+            "thumbnails": [
+                {
+                    "url": "https://lh3.googleusercontent.com/CjmoWDBH4kQKmmdQwZcKF_cv4jdlhsE24OJnKMuTSw5rOFQ9mEwnqRuLb_PZgrXIVmSulZOFvuymGdw6=w60-h60-l90-rj",
+                    "width": 60,
+                    "height": 60
+                },
+                {
+                    "url": "https://lh3.googleusercontent.com/CjmoWDBH4kQKmmdQwZcKF_cv4jdlhsE24OJnKMuTSw5rOFQ9mEwnqRuLb_PZgrXIVmSulZOFvuymGdw6=w120-h120-l90-rj",
+                    "width": 120,
+                    "height": 120
+                }
+            ],
+            "isExplicit": true,
+            "album": {
+                "name": "Unapologetic",
+                "id": "MPREb_NQawzOoDMxC"
+            }
+        }
+    ]
+}

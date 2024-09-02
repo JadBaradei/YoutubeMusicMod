@@ -1,5 +1,6 @@
 [versions]
 agp = "8.3.1"
+glide = "4.16.0"
 jacksonDatabind = "2.15.0"
 junit = "4.13.2"
 junitVersion = "1.2.1"
@@ -12,6 +13,7 @@ navigationUi = "2.6.0"
 activity = "1.8.0"
 
 [libraries]
+glide = { module = "com.github.bumptech.glide:glide", version.ref = "glide" }
 jackson-annotations = { module = "com.fasterxml.jackson.core:jackson-annotations", version.ref = "jacksonDatabind" }
 jackson-core = { module = "com.fasterxml.jackson.core:jackson-core", version.ref = "jacksonDatabind" }
 jackson-databind = { module = "com.fasterxml.jackson.core:jackson-databind", version.ref = "jacksonDatabind" }
