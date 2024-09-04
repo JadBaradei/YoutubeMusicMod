@@ -2,7 +2,6 @@ package com.example.youtubemusicmod.utils;
 
 import android.content.Context;
 
-import com.chaquo.python.PyObject;
 import com.chaquo.python.Python;
 import com.chaquo.python.android.AndroidPlatform;
 import com.example.youtubemusicmod.models.Song;
@@ -20,13 +19,6 @@ public class PythonExecutor {
         this.pythonInstance = init(currentActivity);
     }
 
-    public static PythonExecutor getInstance(Context context) {
-        if (INSTANCE == null) {
-            INSTANCE = new PythonExecutor(context);
-        }
-        return INSTANCE;
-    }
-
     private Python init(Context currentActivity) {
         if (!Python.isStarted()) {
             Python.start(new AndroidPlatform(currentActivity));
@@ -34,16 +26,15 @@ public class PythonExecutor {
         return Python.getInstance();
     }
 
-    public PyObject startMainInstance() {
-        return pythonInstance.getModule("main");
+    public static PythonExecutor getInstance(Context context) {
+        if (INSTANCE == null) {
+            INSTANCE = new PythonExecutor(context);
+        }
+        return INSTANCE;
     }
 
-    public void initYoutube(PyObject main, String oauthFileContent) {
-        PyObject pyObject = main.callAttr("yt_init", oauthFileContent);
-    }
-
-    public void getHome(PyObject main) {
-        main.callAttr("get_home");
+    public void initYoutube(String oauthFileContent) {
+        pythonInstance.getModule("main").callAttr("yt_init", oauthFileContent);
     }
 
     public List<Song> getListenAgain() throws JsonProcessingException {
@@ -51,6 +42,10 @@ public class PythonExecutor {
         String listenAgainString = pythonInstance.getModule("main").callAttr("get_listen_again").toJava(String.class);
         Song[] youtubeSongs = objectMapper.readValue(listenAgainString, Song[].class);
         return Arrays.asList(youtubeSongs);
+    }
+
+    public String getStreamUrl(String videoId) {
+        return pythonInstance.getModule("main").callAttr("get_stream_url", videoId).toJava(String.class);
     }
 
 }

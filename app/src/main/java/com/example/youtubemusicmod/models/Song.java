@@ -1,7 +1,10 @@
 package com.example.youtubemusicmod.models;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+
 import java.util.ArrayList;
 
+@JsonIgnoreProperties(ignoreUnknown = true)
 public class Song {
 
     private String title;
@@ -15,7 +18,7 @@ public class Song {
         //Default constructor
     }
 
-    public Song(String title, String videoId, String playlistId, ArrayList<Thumbnail> thumbnails, ArrayList<Artist> artists, String description) {
+    public Song(String title, String videoId, String playlistId, ArrayList<Thumbnail> thumbnails, ArrayList<Artist> artists, String description, String views, String count) {
         this.title = title;
         this.videoId = videoId;
         this.playlistId = playlistId;

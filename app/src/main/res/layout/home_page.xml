@@ -18,18 +18,4 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal" />
 
-    <TextView
-        android:id="@+id/quick_picks_label"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Quick Picks"
-        android:textSize="18sp"
-        android:padding="16dp" />
-
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/quick_picks_recycler_view"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal" />
-
 </LinearLayout>

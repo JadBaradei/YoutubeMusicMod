@@ -1,6 +1,6 @@
 from ytmusicapi import YTMusic
 import json
-import os
+import yt_dlp
 
 yt = None
 home_data = None
@@ -21,7 +21,8 @@ def yt_init(oauthFileContent):
 
 def get_home():
     global home_data
-    home_data = yt.get_home(limit=5)
+    home_data = yt.get_home(limit=1)
+    return home_data
     
 def get_listen_again():
     if home_data is None:
@@ -47,5 +48,16 @@ def get_song(song_name):
     except Exception as e:
         return f"Error while getting song title: {e}"
     
+def get_stream_url(video_id):
+    ydl_opts = {
+        'format':'bestaudio/best',
+        'noplaylist': True,
+        'quiet':True
+    }
+    with yt_dlp.YoutubeDL(ydl_opts) as ydl:
+        info_dict = ydl.extract_info(f'https://www.youtube.com/watch?v={video_id}', download=False)
+        stream_url = info_dict['url']
+        return stream_url
+    
 # yt_init_here()
-# outputJson(get_quick_picks(), 'quickpicks.json')
+# outputJson(get_home(), 'home.json')

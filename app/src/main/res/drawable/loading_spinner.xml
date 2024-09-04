@@ -1,0 +1,18 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="ring"
+    android:useLevel="false">
+
+    <size
+        android:width="48dp"
+        android:height="48dp" />
+
+    <thickness android:width="3dp" />
+
+    <solid android:color="#FF000000" /> <!-- Set the color of the spinner -->
+
+    <gradient
+        android:startColor="#FFFFFFFF"
+        android:endColor="#FF000000"
+        android:angle="0"
+        android:type="sweep" />
+</shape>

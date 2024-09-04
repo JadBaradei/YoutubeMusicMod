@@ -45,6 +45,7 @@ chaquopy{
     defaultConfig{
         pip{
             install("ytmusicapi")
+            install("yt-dlp")
         }
     }
 }
