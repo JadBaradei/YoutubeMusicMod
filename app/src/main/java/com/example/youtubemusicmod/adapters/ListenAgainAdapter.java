@@ -1,7 +1,9 @@
 package com.example.youtubemusicmod.adapters;
 
 import android.content.Context;
-import android.media.MediaPlayer;
+import android.os.Handler;
+import android.os.Looper;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -10,14 +12,16 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
+import androidx.fragment.app.FragmentManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
 import com.example.youtubemusicmod.R;
+import com.example.youtubemusicmod.fragments.PlayerBottomSheetFragment;
 import com.example.youtubemusicmod.models.Song;
+import com.example.youtubemusicmod.utils.MediaPlayerSingleton;
 import com.example.youtubemusicmod.utils.PythonExecutor;
 
-import java.io.IOException;
 import java.util.List;
 
 public class ListenAgainAdapter extends RecyclerView.Adapter<ListenAgainAdapter.ViewHolder> {
@@ -25,11 +29,13 @@ public class ListenAgainAdapter extends RecyclerView.Adapter<ListenAgainAdapter.
     private final List<Song> songList;
     private final Context context;
     private final PythonExecutor executor;
+    private final FragmentManager supportFragmentManager;
 
-    public ListenAgainAdapter(List<Song> songList, Context context) {
+    public ListenAgainAdapter(List<Song> songList, Context context, FragmentManager supportFragmentManager) {
         this.songList = songList;
         this.context = context;
         executor = PythonExecutor.getInstance(context);
+        this.supportFragmentManager = supportFragmentManager;
     }
 
     @NonNull
@@ -43,11 +49,12 @@ public class ListenAgainAdapter extends RecyclerView.Adapter<ListenAgainAdapter.
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
         Song song = songList.get(position);
-        String songTitle = song.getTitle();
+        String title = song.getTitle();
         String thumbNail = song.getThumbnails().get(0).getUrl();
-        holder.songTitle.setText(songTitle);
+        String videoId = song.getVideoId();
+        holder.songTitle.setText(title);
         loadImageFromURL(holder.albumArt, thumbNail);
-        holder.itemView.setOnClickListener(v -> playSong(song.getVideoId()));
+        holder.itemView.setOnClickListener(v -> launchSong(videoId));
     }
 
     @Override
@@ -63,18 +70,16 @@ public class ListenAgainAdapter extends RecyclerView.Adapter<ListenAgainAdapter.
                 .into(imageView);
     }
 
+    private void launchSong(String videoId) {
+        showPlayerBottomSheet(supportFragmentManager);
+        Thread playSongThread = new Thread(() -> playSong(videoId));
+        playSongThread.start();
+    }
+
     private void playSong(String videoId) {
         String streamUrl = videoIdToStreamUrl(videoId);
-        MediaPlayer mediaPlayer = new MediaPlayer();
-        try {
-            mediaPlayer.setDataSource(streamUrl);
-            mediaPlayer.prepare();
-            mediaPlayer.start();
-            Toast.makeText(context, "Playing song", Toast.LENGTH_SHORT).show();
-        } catch (IOException e) {
-            e.printStackTrace();
-            Toast.makeText(context, "Failed to play song", Toast.LENGTH_SHORT).show();
-        }
+        MediaPlayerSingleton.getInstance().playSong(streamUrl);
+        new Handler(Looper.getMainLooper()).post(() -> Toast.makeText(context, "Playing song", Toast.LENGTH_SHORT).show());
     }
 
     private String videoIdToStreamUrl(String videoId) {
@@ -91,6 +96,13 @@ public class ListenAgainAdapter extends RecyclerView.Adapter<ListenAgainAdapter.
             songTitle = itemView.findViewById(R.id.song_title);
         }
     }
+
+    private void showPlayerBottomSheet(FragmentManager supportFragmentManager) {
+        Log.d("BottomSheet", "Showing bottom sheet");
+        PlayerBottomSheetFragment bottomSheetFragment = new PlayerBottomSheetFragment();
+        bottomSheetFragment.show(supportFragmentManager, bottomSheetFragment.getTag());
+    }
+    
 }
 
 

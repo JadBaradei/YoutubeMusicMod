@@ -1,18 +1,14 @@
 package com.example.youtubemusicmod;
 
 import android.os.Bundle;
-import android.widget.GridLayout;
 
-import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
+import androidx.fragment.app.FragmentManager;
 import androidx.recyclerview.widget.GridLayoutManager;
-import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.youtubemusicmod.adapters.ListenAgainAdapter;
+import com.example.youtubemusicmod.fragments.PlayerBottomSheetFragment;
 import com.example.youtubemusicmod.models.Song;
 import com.example.youtubemusicmod.utils.PythonExecutor;
 import com.fasterxml.jackson.core.JsonProcessingException;
@@ -21,6 +17,7 @@ import java.util.List;
 
 public class HomePageActivity extends AppCompatActivity {
     List<Song> listenAgainSongs;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -32,10 +29,11 @@ public class HomePageActivity extends AppCompatActivity {
         } catch (JsonProcessingException e) {
             throw new RuntimeException(e);
         }
-        if(listenAgainSongs != null){
-            ListenAgainAdapter listenAgainAdapter = new ListenAgainAdapter(listenAgainSongs, this);
+        if (listenAgainSongs != null) {
+            ListenAgainAdapter listenAgainAdapter = new ListenAgainAdapter(listenAgainSongs, this, getSupportFragmentManager());
             listenAgainRecyclerView.setAdapter(listenAgainAdapter);
             listenAgainRecyclerView.setLayoutManager(new GridLayoutManager(this, 2, RecyclerView.HORIZONTAL, false));
         }
     }
+
 }
